@@ -1,1 +1,5 @@
-bower_components/bootstrap/.bower.json
+node_modules/
+bower_components/
+bootstrap/
+.bower
+.json

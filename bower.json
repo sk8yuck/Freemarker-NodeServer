@@ -1,0 +1,21 @@
+{
+  "name": "billbo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "sk8yuck <cwalkyucky@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sk8yuck/Billbo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

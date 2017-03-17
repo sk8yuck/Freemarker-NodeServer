@@ -1,0 +1,7 @@
+{
+  "connectionLimit" : 10,
+  "host": "192.168.1.20",
+  "user": "bookmanager",
+  "password" : "bookmanager",
+  "database" : "bookmanager"
+}

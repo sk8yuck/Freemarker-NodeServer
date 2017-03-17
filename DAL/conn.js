@@ -1,10 +1,4 @@
-var config = {
-  connectionLimit : 10,
-  host: '192.168.1.20',
-  user: 'bookmanager',
-  password : 'bookmanager',
-  database : 'bookmanager'
-},
+var config = require('config.json'),
 mysql = require('mysql'),
 pool  = mysql.createPool(config);
 

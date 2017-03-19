@@ -1,6 +1,6 @@
 node_modules/
 bower_components/
 bootstrap/
+DAL/*.json
 .bower
 *.log
-*.json

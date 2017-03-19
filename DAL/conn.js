@@ -1,6 +1,17 @@
-var config = require('./config.json'),
-mysql = require('mysql'),
-pool  = mysql.createPool(config);
+var config,
+mysql = require('mysql');
+try{
+  config = require('./config.json');
+}catch(err){
+  console.error(err);
+}
+
+if(!config){
+  console.error("cannot find db config.");
+  return;
+}
+
+var pool  = mysql.createPool(config);
 
 exports.doQuery = function(sql,callback){
   pool.getConnection(function(err, connection) {

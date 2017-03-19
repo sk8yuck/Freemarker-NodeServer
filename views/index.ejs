@@ -2,18 +2,11 @@
 <html>
   <head>
     <title>bookinfo</title>
-    <link rel='stylesheet' href='bower_components\bootstrap\dist\css\bootstrap.min.css' />
+    <link rel='stylesheet' href='\public\bootstrap.css' />
     <script src="\bower_components\jquery\dist\jquery.min.js" charset="utf-8"></script>
     <script src="\bower_components\bootstrap\dist\js\bootstrap.min.js" charset="utf-8"></script>
   </head>
   <body>
-    <% books.forEach(function(book){ %>
-      <div class="panel panel-default">
-        <div class="panel-heading"><%= book.name %></div>
-        <div class="panel-body">
-          <%= book.isbn10 %>
-        </div>
-      </div>
-    <% });%>
+
   </body>
 </html>

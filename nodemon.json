@@ -1,0 +1,4 @@
+{
+  "verbose": true,
+  "ignore": ["*.test.js", "bower_components/*","node_modules/*","*.json","*.log"]
+}

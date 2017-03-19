@@ -1,5 +1,9 @@
-var config,
-mysql = require('mysql');
+var log4js = require('log4js');
+log4js.replaceConsole();
+
+var config;
+var mysql = require('mysql');
+
 try{
   config = require('./config.json');
 }catch(err){
@@ -18,7 +22,9 @@ exports.doQuery = function(sql,callback){
     // Use the connection
     connection.query(sql, function(err, results,fields) {
       // And done with the connection.
-      callback(results);
+      if(1==callback.arguments.length)
+        callback(results);
+      callback(err,results);
       connection.release();
 
       if(err) throw err;

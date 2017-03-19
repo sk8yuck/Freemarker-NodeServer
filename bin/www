@@ -7,6 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('billbo:server');
 var http = require('http');
+var log4js = require('log4js');
+log4js.replaceConsole();
 
 /**
  * Get port from environment and store in Express.

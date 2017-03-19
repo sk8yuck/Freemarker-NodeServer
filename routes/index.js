@@ -1,15 +1,15 @@
+var log4js = require('log4js');
+log4js.replaceConsole();
+
 var express = require('express');
 var router = express.Router();
 
-var conn = require('../DAL/conn.js');
+//TODO:When db ready open
+// var conn = require('../DAL/conn.js');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  conn.doQuery('SELECT * FROM BOOK_INFO',function(books){
-    res.render('index',
-    {
-       books: books
-     });
-  });
+  res.render('index');
 });
 
 module.exports = router;

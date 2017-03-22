@@ -1,1 +1,1 @@
-An online multiple people task manager
+A freemarker supported nodejs server
